@@ -13,19 +13,14 @@ with open(sys.argv[1], 'rb') as in_file:
     with open(a, 'wb') as out_file:
         out_file.write(in_file.read()[36:])
 print("Moshing")
-#print('ffmpeg -f alaw -i "%s" -af "volume=volume=3" -ac 1 -f alaw "%s"'%(a,b))
 #os.system('ffmpeg -f alaw -i "%s" -y -af "volume=volume=3" -ac 1 -f alaw "%s"'%(a,b)) <- Basic
 os.system('ffmpeg -f alaw -i "%s" -y -af "volume=volume=3,bass=g=3:f=110:w=0.6,aformat=channel_layouts=mono,chorus=0.5:0.5:1:0.1:1:2" -ac 1 -f alaw "%s"'%(a,b))
 
 if os.path.exists(b):
     print("Adding Header")
     with open(sys.argv[2], 'wb') as o:
-        #with open("hex.hex",'r') as hx:
-            #print(hx.read())
-            #o.write(hx.read())
         with open(sys.argv[1],'rb') as hx:
             with open(b,'rb') as i:
-                #o.write(b'BM6\x1bz\x01\x00\x00\x00\x006\x00\x00\x00(\x00\x00\x00\xf0\x0e\x00\x00p\x08\x00\x00\x01\x00\x18\x00\x00\x00\x00\x00\x00\x1bz\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'+i.read())
                 o.write(hx.read()[:36]+i.read())
     print("Done")
 else:
