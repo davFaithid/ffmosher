@@ -1,0 +1,2 @@
+# ffmosher
+ Datamoshing with FFmpeg
