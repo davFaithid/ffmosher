@@ -25,3 +25,9 @@ As was demonstrated in the Reddit post, you can use audio filters to distort ima
 
 Currently if you want to change the default filter, you will have to manually edit the `mosh.py`. I will be adding customizable filters sometime in the future.
 
+## Demonstration
+
+10 second clip of [Big Buck Bunny](https://peach.blender.org/) (Note: Gif compression reduces some of the detail.)
+
+[![Original](https://i.postimg.cc/GhNb6xgT/nonmoshed.gif)](https://postimg.cc/RN7rHKBv)
+[![Moshed](https://i.postimg.cc/xTq0s45S/moshed.gif)](https://postimg.cc/qzVVqQWm)
