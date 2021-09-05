@@ -16,3 +16,12 @@ py -3 input.bmp output.bmp
 Currently this is just a proof of concept. In future I will allow for customizable filters.
 
 At the moment any outputted video is mute.
+
+The idea for this project came from [here](https://www.reddit.com/r/datamoshing/comments/9s0los/datamoshd_a_screenshot_with_audacity_came_out/?utm_source=share&utm_medium=web2x&context=3)
+
+## How does this work?
+
+As was demonstrated in the Reddit post, you can use audio filters to distort images. I thought about automating that process using FFmpeg instead of Audacity however.
+
+Currently if you want to change the default filter, you will have to manually edit the `mosh.py`. I will be adding customizable filters sometime in the future.
+
