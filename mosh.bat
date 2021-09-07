@@ -1,3 +1,4 @@
+cd "%~dp0"
 mkdir frames 2>NUL
 mkdir moshed 2>NUL
 ffmpeg -i "%~1" frames/"%%04d".bmp
