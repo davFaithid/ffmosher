@@ -8,7 +8,7 @@ To datamosh an image, please ensure the file is in a `bitmap (.bmp)` format.
 Then simply run 
 
 ```
-py -3 input.bmp output.bmp
+py -3 mosh.py input.bmp output.bmp
 ```
 
 ## Note
