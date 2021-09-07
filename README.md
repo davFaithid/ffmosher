@@ -8,7 +8,17 @@ To datamosh an image, please ensure the file is in a `bitmap (.bmp)` format.
 Then simply run 
 
 ```
-py -3 mosh.py input.bmp output.bmp
+py -3 mosh.py -i input.bmp -f filter -o output.bmp
+```
+
+## Filters
+
+For filters, you must use [FFmpeg's filters](https://ffmpeg.org/ffmpeg-filters.html) using the `-f` or `--filter` command.
+
+For example:
+
+```
+py -3 mosh.py -i input.bmp -f volume=volume=3,bass=g=3:f=110:w=0.6 -o output.bmp
 ```
 
 ## Note
