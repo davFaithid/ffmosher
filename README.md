@@ -21,6 +21,8 @@ For example:
 py -3 mosh.py -i input.bmp -f volume=volume=3,bass=g=3:f=110:w=0.6 -o output.bmp
 ```
 
+[Here is a list of some good filters with examples.](FILTERS.md)
+
 ## Note
 
 Currently this is just a proof of concept. In future I will allow for customizable filters.
