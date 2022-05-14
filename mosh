@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 cd "$(dirname "$(realpath $0)")"
 mkdir frames moshed
-ffmpeg -i $1 frames/"%04d".bmp
+ffmpeg -i $1 frames/"%04d.bmp"
 for i in frames/*.bmp; do python mosh.py "$i" -f volume=volume=3,bass=g=3:f=110:w=0.6,aformat=channel_layouts=mono,chorus=0.5:0.5:1:0.1:1:2 -o "moshed/$i"; done
 ffmpeg -i moshed/"%04d.bmp" -c:a h264 -crf 30 -r 24 moshed.mp4
 read -rs
