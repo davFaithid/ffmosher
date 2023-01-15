@@ -41,5 +41,8 @@ Currently if you want to change the default filter, you will have to manually ed
 
 10 second clip of [Big Buck Bunny](https://peach.blender.org/) (Note: Gif compression reduces some of the detail.)
 
-|[![Original](https://i.postimg.cc/GhNb6xgT/nonmoshed.gif)](https://postimg.cc/RN7rHKBv)|[![Moshed](https://i.postimg.cc/xTq0s45S/moshed.gif)](https://postimg.cc/qzVVqQWm)|
-|---	|---	|
+| [Original](https://imgur.com/cFIGbZU) | [Datamoshed](https://imgur.com/MM1nzGl) |
+| :------: | :--------: |
+|![Original](https://i.imgur.com/cFIGbZU.gif)|![Datamosh](https://i.imgur.com/MM1nzGl.gif)|
+
+If the above images aren't displaying, please visit [here](https://imgur.com/a/zc87MqN).
